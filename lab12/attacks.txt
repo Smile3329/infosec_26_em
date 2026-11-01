@@ -1,0 +1,3 @@
+Attackers can build profiles of victims through data breaches, public open sources and commercial data brokers.
+
+With these data they can use spear phishing, brute-force with targeted dictionary and credential stuffing
